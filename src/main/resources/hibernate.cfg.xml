@@ -10,5 +10,10 @@
         <property name="hibernate.connection.username">sa</property>
         <property name="hibernate.connection.password">sa</property>
         <property name="hibernate.connection.url">jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1</property>
+        <mapping class="ru.tinkoff.qa.hibernate.entities.Animal"/>
+        <mapping class="ru.tinkoff.qa.hibernate.entities.Workman"/>
+        <mapping class="ru.tinkoff.qa.hibernate.entities.Places"/>
+        <mapping class="ru.tinkoff.qa.hibernate.entities.Zoo"/>
+
     </session-factory>
 </hibernate-configuration>
