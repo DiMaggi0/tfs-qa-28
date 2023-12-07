@@ -4,7 +4,9 @@ plugins {
 
 group = "ru.tinkoff.qa"
 version = "1.0-SNAPSHOT"
-
+tasks.compileJava{
+    options.encoding = "UTF-8"
+}
 repositories {
     mavenCentral()
 }
@@ -21,6 +23,7 @@ dependencies {
 
     // api
     testImplementation("io.rest-assured:rest-assured:5.3.2")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.16.0")
 }
 
 tasks.test {
